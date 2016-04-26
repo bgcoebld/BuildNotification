@@ -1,3 +1,6 @@
+BuildNotification
+Custom Email Build Notifcation for vNext builds.
+
 ### How to use **Build Notification** Task
 
 This extension contains a build task for VS Team Services to Send Custom Email Build Notifcation for vNext builds.
