@@ -13,6 +13,7 @@ This extension contains a build task for VS Team Services to Send Custom Email B
 ###Input the following 2 Variables under the variables tab:
 
    MailAccount Password(MailAccntPWD)   -- Prefered Encrypted Format 
+   
    Personal Access Token(PAT)           -- Prefered Encrypted Format
 
 ###Input the following values for the Task:
