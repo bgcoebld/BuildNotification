@@ -2,7 +2,7 @@
   "id": "B0E438F2-18BA-44DF-B6E5-1DEB7A29811F",
   "name": "BuildNotification",
   "friendlyName": "Build Notification",
-  "description": "Custom Email Build Notifcation",
+  "description": "Custom Email Build Notification",
   "helpMarkDown": "[More Information](https://github.com/bgcoebld/BuildNotification)",  
   "category": "Utility",
   "visibility": [
@@ -104,7 +104,7 @@
 	
   ],
 
-  "instanceNameFormat": "Custom Email Build Notifcation",
+  "instanceNameFormat": "Custom Email Build Notification",
   "execution": {
     "Powershell": {
       "target": "$(currentDirectory)\\BuildNotification.ps1",
