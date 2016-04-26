@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Build Status</title>
+    <style type="text/css">
+        td {
+            font-family: Segoe UI, Verdana;
+            font-size: x-small;
+        }
+
+        table {
+            width: 1000px;
+            height: 100%;
+        }
+
+        .mailTextStyle {
+            border-width: thin;
+            border-style: none;
+            width: 1000px;
+        }
+
+        .featureHeading {
+            margin-bottom: .0001pt;
+            font-size: 13.0pt;
+            font-weight: bold;
+            font-family: Corbel,Segoe UI,sans-serif;
+            color: darkslategray;
+        }
+
+        .tinyComment {
+            font-size: xx-small;
+            color: darkcyan;
+            padding-left: 5px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        .noticeTextStyle {
+            font-family: Corbel,"Calibri","sans-serif";
+            font-size: 12.0pt;
+            color: darkslateblue;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .summaryHeading {
+            font-size: 20.0pt;
+            font-family: Corbel,Segoe UI,sans-serif;
+            color: darkcyan;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .labelSuccess {
+            color: green;
+            font-size: 10pt;
+            font-weight: bold;
+        }
+
+        .labelPartial {
+            color: orangered;
+            font-size: 10pt;
+            font-weight: bold;
+        }
+
+        .labelError {
+            color: Red;
+            font-size: 10pt;
+            font-weight: bold;
+        }
+
+        .statusTable {
+            align-content: center;
+            width: 480px;
+            height: 300px;
+            margin-left: 10px;
+            border-spacing: 0px;
+            border-collapse: collapse;
+            border-style: solid;
+            border-color: darkslategray;
+            border-width: 1px;
+            overflow-wrap: break-word;
+            border: dotted 1px #a7a7a7;
+            color: #424242;
+        }
+
+        .successTd {
+            background-color: rgb(98, 193, 91);
+            width: 480px;
+            height: 25px;
+            font-family: Segoe UI,sans-serif;
+            text-align: center;
+            font-weight: 400;
+            align-content: center;
+            overflow-wrap: break-word;
+        }
+
+        .failedTd {
+            background-color: #eb4444;
+            width: 400px;
+            height: 25px;
+            font-family: Segoe UI,sans-serif;
+            text-align: center;
+            font-weight: 400;
+            overflow-wrap: break-word;
+        }
+
+        .infoTd {
+            background-color: #F0F0F0;
+            font-family: Segoe UI,sans-serif;
+            font-size: 12.5pt;
+            font-weight: 500;
+            width: 200px;
+            height: 275px;
+            content: none;
+            overflow-wrap: break-word;
+        }
+
+        .statusTextStyle {
+            color: white;
+            position: relative;
+            font-size: small;
+        }
+
+        .summaryList a {
+            font-family: Segoe UI,sans-serif;
+            font-size: 10pt;
+            font-weight: 500;
+            text-decoration: none;
+        }
+
+        .summaryList {
+            font-family: Segoe UI,sans-serif;
+            font-size: 10pt;
+            list-style: circle !important;
+            padding-left: 10px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+
+        .detailsTable {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: black;
+            border: 0 solid rgb(148, 192, 203);
+            border-collapse: collapse;
+            padding: 0;
+            border-spacing: 0;
+        }
+
+            .detailsTable td {
+                border-width: 1pt 1pt 1pt;
+                border-style: solid solid solid;
+                border-color: rgb(148, 192, 203) rgb(148, 192, 203) rgb(148, 192, 203);
+                padding: 1.5pt;
+            }
+
+        .detailsTableHeader {
+            background: rgb(218, 239, 244);
+            font-weight: bold;
+        }
+
+        .detailsTableOddTr {
+            background: rgba(218, 239, 244,0.4);
+        }
+
+            .detailsTableOddTr td {
+                background: rgba(218, 239, 244,0.4);
+            }
+
+        .bdSummary {
+            height: 100%;
+            width: 600px;
+            color: darkslategray;
+            font-family: Segoe UI,sans-serif;
+            font-size: 9pt;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-left: 10px;
+            overflow-wrap: break-word;
+            background-color: whitesmoke;
+            list-style: square !important;
+        }
+
+        .detailedSectionHeader {
+            text-align: center;
+            color: darkcyan;
+            font-size: 10pt;
+        }
+
+        .bannerTable {
+            width: 100%;
+            height: 150px;
+            border-spacing: 0;
+            padding: 0;
+            font-family: "Segoe UI Light",sans-serif,Segoe UI;
+        }
+
+        .bannerTableTd1 {
+            width: 10%;
+            height: 100px;
+            background: teal;
+            font-size: 26pt;
+            color: white;
+            text-align: center;
+            vertical-align: central;
+        }
+
+        .bannerTableTd2 {
+            width: 90%;
+            height: 100px;
+            background: #d3d3d3;
+            font-size: 26pt;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body style="background-color:#FFF">
+    <table cellpadding="0" cellspacing="0" class="mailTextStyle">
+        <tr>
+            <td>
+                <table cellpadding="0" cellspacing="0" class="bannerTable">
+                    <tr>
+                        <td class="bannerTableTd1">IT</td>
+                        <td class="bannerTableTd2"><@bannerheader></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <em><span class="tinyComment">This is an automated build notification from the</span></em>
+                <a href="mailto:<@mailToLinkMailId>"><@bannerheader></a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br />
+                    <span class="noticeTextStyle">The Build <@buildnumber> is </span><b><@buildstatus></b>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br />
+                <hr />
+                <br />
+                    <span class="summaryHeading">Build Execution Summary</span>
+                <br />
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left:45px">
+                <ul class="bdSummary">
+                    <li><b>Build Definition : </b><@builddefinitionname></li>
+                    <li><b>Requesting User: </b><@requestinguser></li>
+                    <li><b>Team Project Collection: </b><@tpcname></li>
+                    <li><b>Team Project: </b><@teamprojectname></li>
+                    <li><b>Build Number: </b><@buildnumber></li>
+                    <li><b>Build Queue: </b><@buildqueue></li>
+                    <li><b>Repository Type: </b><@repositorytype></li>
+                    <li><b>Build Execution Type: </b><@buildexecutiontype></li>
+                    <li><b>Team Build URI : </b><@teambuildinformation></li>
+                    
+                </ul>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table style="height:3in;">
+                    <tr>
+                        <td>
+                            <table class="statusTable">
+                                <tr><td class="successTd"><span class="statusTextStyle">Passed</span></td></tr>
+                                <tr>
+                                    <td class="infoTd">
+                                        <ul class="summaryList">
+                                            <@passedbuildfeatures>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                        <td>
+                            <@failedbuildfeatures>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br />
+                <br />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
