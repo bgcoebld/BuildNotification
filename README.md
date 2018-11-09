@@ -15,13 +15,13 @@ This extension contains a build task for VS Team Services to Send Custom Email B
 
 4.Configure the step.
 
-###Input the following 2 Variables under the variables tab:
+### Input the following 2 Variables under the variables tab:
 
    MailAccount Password(MailAccntPWD)   -- Prefered Encrypted Format 
    
    Personal Access Token(PAT)           -- Prefered Encrypted Format
 
-###Input the following values for the Task:
+### Input the following values for the Task:
 
 	From
 	To (Comma-Delimitied)
@@ -32,4 +32,4 @@ This extension contains a build task for VS Team Services to Send Custom Email B
 	MailAccountPWD (Better we suggest to use the Encrypted value from Variable section($(MailAccntPWD)) )
 	PAT (Better we suggest to use the Encrypted value from Variable section($(PAT)) )
 
-###Trigger a build will get the Notification email for VNext Build.
+### Trigger a build will get the Notification email for VNext Build.
